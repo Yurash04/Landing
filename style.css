@@ -35,31 +35,179 @@ body { overflow: hidden; }
 /* ==============================*/
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.65)), url(Resources/shutterstock_687485104.jpg);
+    background-image: linear-gradient(#B2D9E6, #87BCFD);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     height: 100vh;
-}
-
-h1 {
-    margin: auto;
-    text-align: center;
-    border: 1px solid #999;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 4px;
-    font-weight: 300;
-    font-size: 200%;
     
 }
 
+.logo {
+    /*border: 1px solid #555;
+    */height: 130px;
+    width: 130px;
+    padding: 5px;
+    margin-left: 70px;
+}
+
+nav {
+
+}
+
+.title-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+
+    /*border: 1px solid #555;*/
+    
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 260%;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 48px;
+    /*border: 1px solid #555;*/
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    border: 1px solid #4833EB;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+    -webkit-transition: background-color 0.2s, color 0.2s, border 0.2s;
+    -moz-transition: background-color 0.2s, color 0.2s, border 0.2s;
+    -ms-transition: background-color 0.2s, color 0.2s, border 0.2s;
+    -o-transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #4833EB;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #4833EB;
+    margin-left: 30px;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #2612BA;
+    border: 1px solid #2612BA;
+    color: #fff;
+}
+
+.box {
+    /*border: 1px solid #555;*/
+
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.box span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-bottom: 1px solid #2612BA;
+    border-right: 1px solid #2612BA;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    animation: animate 2s infinite;
+    -webkit-animation: animate 2s infinite;
+}
+
+.box span:nth-child(2) {
+    animation-delay: -0.2s;
+    transform: rotate(45deg) translate(-20px, -20px);
+    -webkit-transform: rotate(45deg) translate(-20px, -20px);
+    -moz-transform: rotate(45deg) translate(-20px, -20px);
+    -ms-transform: rotate(45deg) translate(-20px, -20px);
+    -o-transform: rotate(45deg) translate(-20px, -20px);
+}
+
+.box span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+        -webkit-transform: rotate(45deg) translate(-20px, -20px);
+        -moz-transform: rotate(45deg) translate(-20px, -20px);
+        -ms-transform: rotate(45deg) translate(-20px, -20px);
+        -o-transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+        -webkit-transform: rotate(45deg) translate(20px, 20px);
+        -moz-transform: rotate(45deg) translate(20px, 20px);
+        -ms-transform: rotate(45deg) translate(20px, 20px);
+        -o-transform: rotate(45deg) translate(20px, 20px);
+}
+}
+
+
+
 
 /* ==============================*/
-/*                         */
+/*             CALCULATOR        */
 /* ==============================*/
 
+
+.section-calculator {
+    height: 600px;
+    background: #555;
+}
 
 
 
