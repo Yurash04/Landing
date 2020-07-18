@@ -1,0 +1,90 @@
+/* ==============================*/
+/*         Basic setup           */
+/* ==============================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Montserrat', 'Times New Roman', 'sans-serif';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+body { overflow: hidden; }
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ==============================*/
+/*            Header             */
+/* ==============================*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.65)), url(Resources/shutterstock_687485104.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    border: 1px solid #999;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: 300;
+    font-size: 200%;
+    
+}
+
+
+/* ==============================*/
+/*                         */
+/* ==============================*/
+
+
+
+
+
+/* ==============================*/
+/*                         */
+/* ==============================*/
+
+
+
+
+/* ==============================*/
+/*                         */
+/* ==============================*/
+
+
+
+
+/* ==============================*/
+/*                         */
+/* ==============================*/
+
+
+
+
+
+
+
