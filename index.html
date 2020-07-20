@@ -12,25 +12,32 @@
         <link rel="stylesheet" href="queries.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
 
-        <title>Calculate the companie's value in seconds</title> 
+        <title>Company's valuation</title> 
 
     </head>
 
     <body>
-        <header>
+        <header id="js--header">
             <nav>
                 <div class="row">
-                    <a class="logo-link: href="#"><img class="logo" src="Resources/f84f82c4-16cb-4c82-ac48-bdba3725c76a_200x200.png"></a>
+                    <a href="#js--header"><img class="logo" src="Resources/f84f82c4-16cb-4c82-ac48-bdba3725c76a_200x200.png"></a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#js--section-bother">Why care</a></li>
+                        <li><a href="#js--section-works">Hot it works</a></li>
+                        <li><a href="#js--section-looks">How it looks</a></li>
+                        <li><a href="#js--section-form">Valuation</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a
                 </div>
             </nav>
             <div class="title-box">
                 <h1>Calculate companie's value range. <br> Fast, flexible and reliable.</h1>
                 <div class="buttons">
-                    <a class="btn btn-full" href="#">Let's try</a>
-                    <a class="btn btn-ghost" href="#">Why bother?</a>
+                    <a class="btn btn-full" href="#js--section-form">Let's try</a>
+                    <a class="btn btn-ghost" href="#js--section-bother">Why bother?</a>
                 </div>  
             </div>
-            <div class="box">
+            <div class="box" onclick="location.href='#js--section-bother';" style="cursor: pointer;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -38,15 +45,223 @@
             
         </header>
 
-        <section class="section-calculator clearfix">
-            <div class="second-header">
-                <h2>What we'll need from you:</h2>
-            </div>
 
+
+        <section class="section-why-bother" id="js--section-bother">
+            <h2>You've got the point, who needs it?</h2>
+            <p>At the time, when P/E ratio of over 100 does not scare anyone because the expected revenue growth rates seem to double every other year one needs a solid and grounded foundation when it comes to investing. Investors no longer deem it unprudent to see Nasdaq exceeding before-pandemic highs. That is when value investing comes in handy in order to check in with real cashflows and interest rates.</p>
+            <img src="Resources/nasdaq.png" class="nasdaq" alt="nasdaq-graph">
+        </section>
+
+
+
+        <section class="section-works" id="js--section-works">
+
+            <div class="works-header">
+                <h2>How it works</h2>
+                <h3>We rely on income-based approach</h3>
+            </div>
+            <div class="income-based"> 
+                <p>We believe that one of the main misconceptions of our era is undervaluing the importance of generating cashflows. That is why we suggest using income-based approach that can provide a clearer vision of company's value.</p>
+                     <ul class="dcf-pros">
+                        <li>Assessment is made by means of DCF model.</li>
+                        <li>We provide you with not just one estimation, but with a range of values.</li>
+                        <li>Modelling of worst-case, base-case and best-case scenarios is achieved through manipulating discount rate and post-terminal growth rate.</li>
+                     </ul>
+            </div>
+            <h3>Disclaimer</h3>
+            <p>income-based approach should be used as an component of complete business valuation process due to the fact that company's value cannot be fully described by means of only one instrument.</p>
 
         </section>
 
 
+
+        <section class="section-form" id="js--section-form">
+            <div>
+                <h2>What we'll need from you:</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="data-form">
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="cf1">Company's CF for 1 prognosed period</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="cf1" type="text" name="cf1" id="cf1" placeholder="First CF" required></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="cf2">Company's CF for 2 prognosed period</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="cf2" type="text" name="cf2" id="cf2" placeholder="Second CF" required></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="cf3">Company's CF for 3 prognosed period</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="cf3" type="text" name="cf3" id="cf3" placeholder="Third CF" required></input>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="cf4">Company's CF for 4 prognosed period</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="cf4" type="text" name="cf4" id="cf4" placeholder="Fourth CF" required></input>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="cf5">Company's CF for 5 prognosed period</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="cf5" type="text" name="cf5" id="cf5" placeholder="Fifth CF" required></input>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="gr">Expected growth rate</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="gr" type="text" name="gr" id="gr" placeholder="Expected growth rate" required></input>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="capm">CAPM</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="capm" type="text" name="capm" id="capm" placeholder="CAPM" required></input>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="wacc">WACC</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="wacc" type="text" name="wacc" id="wacc" placeholder="WACC" required></input>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="shares">Amount of shares oustanding</label>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <input class="shares" type="text" name="shares" id="shares" placeholder="Shares outstanding" required></input>
+                        </div>
+                    </div>
+
+                    <div class="row submit" onclick="location.href='#js--section-looks';">
+                        <button type="button" class="btn submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+
+        <section class="section-calculator" id="js--section-looks">
+            <h2>Your valuation is here</h2>
+
+            <div class="company-valuation">
+                <h3>Worth of the company </h3>
+                <table class="company-table" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th colspan="2" rowspan="2">Company value, $</th>
+                        <th colspan="3">Expected growth rate</th>
+                    </tr>
+                    <tr align="center">
+                        <td class="ptgr80">2%</td>
+                        <td class="ptgr">4%</td>
+                        <td class="ptgr20">6%</td>
+                    </tr>
+                    <tr align="center">
+                        <th class="discount-rate" rowspan="3">Discount Rate</th>
+                        <td class="dr80">12%</td>
+                        <td class="cell-7">7</td>
+                        <td class="cell-8">8</td>
+                        <td class="cell-9">9</td>
+                    </tr>
+                    <tr align="center">
+                        <td class="dr">15%</td>
+                        <td class="cell-4">4</td>
+                        <td class="cell-5">5</td>
+                        <td class="cell-6">6</td>
+                    </tr>
+                    <tr align="center">
+                        <td class="dr20">18%</td>
+                        <td class="cell-1">1</td>
+                        <td class="cell-2">2</td>
+                        <td class="cell-3">3</td>
+                    </tr>
+                </table>
+                <h3>Worth of one share</h3>
+                <table class="company-table" border="1" cellpadding="10" cellspacing="0">
+                    <tr>
+                        <th colspan="2" rowspan="2">Share value, $</th>
+                        <th colspan="3">Expected growth rate</th>
+                    </tr>
+                    <tr align="center">
+                        <td class="ptgr80sh">2%</td>
+                        <td class="ptgrsh">4%</td>
+                        <td class="ptgr20sh">6%</td>
+                    </tr>
+                    <tr align="center">
+                        <th class="discount-rate" rowspan="3">Discount Rate</th>
+                        <td class="dr80sh">12%</td>
+                        <td class="cell-70">7</td>
+                        <td class="cell-80">8</td>
+                        <td class="cell-90">9</td>
+                    </tr>
+                    <tr align="center">
+                        <td class="drsh">15%</td>
+                        <td class="cell-40">4</td>
+                        <td class="cell-50">5</td>
+                        <td class="cell-60">6</td>
+                    </tr>
+                    <tr align="center">
+                        <td class="dr20sh">18%</td>
+                        <td class="cell-10">1</td>
+                        <td class="cell-20">2</td>
+                        <td class="cell-30">3</td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <div class="row">
+                    <ul class="footer-nav">
+                        <li><a href="#js--section-bother">Why care</a></li>
+                        <li><a href="#js--section-works">How it works</a></li>
+                        <li><a href="#js--section-looks">How it looks</a></li>
+                        <li><a href="#js--section-form">Valuation</a></li>
+                    </ul>
+            </div>
+            <div class="row footer-text">
+                <p>Copyright &copy; 2020 by Valuation G. All rights reserved</p>
+            </div
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        <script src="Vendors/js/jquery.waypoints.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+        
+        <script src="script.js"></script>
     </body>
 
 
