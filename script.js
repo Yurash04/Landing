@@ -6,16 +6,51 @@ $(document).ready(function() {
     $('#js--section-bother').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
-            console.log('Hoooray!')
         } else {
-            console.log('lol x2')
             $('nav').removeClass('sticky');
         }
-        console.log('sorry bro')
     }, {
       offset: '60px;'
     });
 });
+
+
+// Mobile Menu
+$('.js--nav-icon').click(function() {
+    let nav = $('.js--main-nav');
+    let icon = $('.js--upper-nav a ion-icon')
+
+    nav.slideToggle(200);
+    if ($(icon).attr('name') === 'menu-outline') {
+        $(icon).attr('name', 'close-outline')
+    } else {
+        $(icon).attr('name', 'menu-outline')
+    }
+
+    //<ion-icon name="close-outline" class="dos"></ion-icon>
+});
+
+// Starter Graph
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
+        datasets: [{
+            label: 'Valuation dynamics',
+            backgroundColor: '#87BCFD',
+            borderColor: '#87BCFD',
+            data: [1,2,3,4,5,6,7,8,9]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
 
 
 // Create a class CompanyValue
@@ -86,7 +121,7 @@ let CompanyValue = function(cf1, cf2, cf3, cf4, cf5, ptgr, capm, wacc, shares) {
     }
     this.calcCell9 = function() {
         let beforeTermValue = (this.cf1 / Math.pow((1 + this.dr80/100), 1) + (this.cf2 / Math.pow((1 + this.dr80/100), 2) + this.cf3 / Math.pow((1 + this.dr80/100), 3) + this.cf4 / Math.pow((1 + this.dr80/100), 4) + this.cf5 / Math.pow((1 + this.dr80/100), 5)));
-        let terminalValue = ((this.cf5 * (1 + this.ptgr20/100)) / (this.dr80/100 - this.ptgr/100)) / Math.pow((1 + this.dr80/100), 5);
+        let terminalValue = ((this.cf5 * (1 + this.ptgr20/100)) / (this.dr80/100 - this.ptgr20/100)) / Math.pow((1 + this.dr80/100), 5);
         console.log(beforeTermValue, terminalValue);
         return (beforeTermValue + terminalValue).toFixed(0);
     }
@@ -203,6 +238,7 @@ updateValuation = function() {
     c7 = company.calcCell7();
     c8 = company.calcCell8();
     c9 = company.calcCell9();
+    
 
     document.querySelector(domStrings.cell1).textContent = formatNumber(c1);
     document.querySelector(domStrings.cell2).textContent = formatNumber(c2);
