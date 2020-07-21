@@ -1,0 +1,172 @@
+/* =====================================================*/
+/* Big tablets to 1200px (from 1024 to 1200px) */
+/* =====================================================*/
+@media only screen and (max-width: 1200px) {
+
+    .sticky .row {
+        width: 85%;
+    }
+
+    section { padding: 40px 0; }
+
+    h1 { font-size: 220%; }
+
+    h2 { 
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+        font-size: 190%;
+    }
+
+    h2:after {
+        margin-top: 15px;
+    }
+
+    h3 { 
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+
+    p {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .row { width: 95%; }
+
+    .nasdaq { max-width: 60%;
+        padding: 5px;
+        height: 300px;
+        margin-top: 30px; 
+    }
+
+    .dcf-pros { margin: 10px 0 15px; }
+
+    .dcf-pros li {
+        width: 70%;
+        font-size: 90%;
+    }
+
+    .data-form {
+        margin: 0 auto;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 80%;
+    
+        /*border: 1px solid #555;*/
+    }
+    
+    input {
+        margin-left: 40px;
+        width: 60%;
+        padding: 5px;
+        border-radius: 8px;
+        border: 1px solid #cccccc;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+    
+    label {
+        margin-left: 140px;
+    }
+}
+/* =====================================================*/
+/* From small tablets to big tablet: from 768 to 1023px */
+/* =====================================================*/
+
+@media only screen and (max-width: 1023px) {
+    
+    .main-nav li {
+        margin-left: 20px;
+    }
+
+    body { font-size: 18px; }
+    section { padding: 40px 0; }
+
+    h1 { font-size: 180%; }
+
+    h2 { font-size: 160%; }
+
+    h3 { 
+        font-size: 150%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    p {
+        width: 80%;
+        margin-top: 15px;
+    }
+
+    .nasdaq { 
+        max-width: 60%;
+        padding: 5px;
+        height: 300px;
+        margin-top: 15px; 
+    }
+
+    .data-form {
+        margin: 15px auto;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 5px;
+        font-size: 78%;
+    
+        /*border: 1px solid #555;*/
+    }
+    
+    input {
+        margin-left: 40px;
+        width: 60%;
+        padding: 6px;
+        border-radius: 8px;
+        border: 1px solid #cccccc;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+    
+    label {
+        margin-left: 60px;
+    }
+
+    .company-table {
+        margin: 20px auto;
+        width: 80%;
+        font-size: 90%;
+    }
+    
+    td,
+    th {
+        padding: 8px;
+    }
+    
+    #myChart { margin-top: 50px; }
+
+}
+
+/* =====================================================*/
+/* Small phones to small tablets: from 481 to 767px */
+/* =====================================================*/
+@media only screen and (max-width: 767px) {
+
+
+
+
+}
+
+/* =====================================================*/
+/* Small phones from 0 to 480px width */
+/* =====================================================*/
+@media only screen and (max-width: 480px) {
+
+    section { padding: 20px; }
+
+}
+
+
+

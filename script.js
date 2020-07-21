@@ -1,20 +1,21 @@
 
 // Sticky menu
-
+console.log('haha lol')
 $(document).ready(function() {
                                  
-    $('.js--section-bother').waypoint(function(direction) {
+    $('#js--section-bother').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
             console.log('Hoooray!')
         } else {
+            console.log('lol x2')
             $('nav').removeClass('sticky');
         }
+        console.log('sorry bro')
     }, {
       offset: '60px;'
     });
 });
-
 
 
 // Create a class CompanyValue
@@ -177,6 +178,8 @@ function formatNumber(x) {
 // Update the UI
 updateValuation = function() {
 
+    let c1, c2, c3, c4, c5, c6, c7, c8, c9;
+
     document.querySelector(domStrings.ptgr80).textContent = (company.ptgr80.toFixed(1) + '%');
     document.querySelector(domStrings.ptgr).textContent = (company.ptgr.toFixed(1) + '%');
     document.querySelector(domStrings.ptgr20).textContent = (company.ptgr20.toFixed(1) + '%');
@@ -190,16 +193,26 @@ updateValuation = function() {
     document.querySelector(domStrings.dr80sh).textContent = (company.dr80.toFixed(1) + '%');
     document.querySelector(domStrings.drsh).textContent = (company.dr.toFixed(1) + '%');
     document.querySelector(domStrings.dr20sh).textContent = (company.dr20.toFixed(1) + '%');
-    
-    document.querySelector(domStrings.cell1).textContent = formatNumber(company.calcCell1());
-    document.querySelector(domStrings.cell2).textContent = formatNumber(company.calcCell2());
-    document.querySelector(domStrings.cell3).textContent = formatNumber(company.calcCell3());
-    document.querySelector(domStrings.cell4).textContent = formatNumber(company.calcCell4());
-    document.querySelector(domStrings.cell5).textContent = formatNumber(company.calcCell5());
-    document.querySelector(domStrings.cell6).textContent = formatNumber(company.calcCell6());
-    document.querySelector(domStrings.cell7).textContent = formatNumber(company.calcCell7());
-    document.querySelector(domStrings.cell8).textContent = formatNumber(company.calcCell8());
-    document.querySelector(domStrings.cell9).textContent = formatNumber(company.calcCell9());
+
+    c1 = company.calcCell1();
+    c2 = company.calcCell2();
+    c3 = company.calcCell3();
+    c4 = company.calcCell4();
+    c5 = company.calcCell5();
+    c6 = company.calcCell6();
+    c7 = company.calcCell7();
+    c8 = company.calcCell8();
+    c9 = company.calcCell9();
+
+    document.querySelector(domStrings.cell1).textContent = formatNumber(c1);
+    document.querySelector(domStrings.cell2).textContent = formatNumber(c2);
+    document.querySelector(domStrings.cell3).textContent = formatNumber(c3);
+    document.querySelector(domStrings.cell4).textContent = formatNumber(c4);
+    document.querySelector(domStrings.cell5).textContent = formatNumber(c5);
+    document.querySelector(domStrings.cell6).textContent = formatNumber(c6);
+    document.querySelector(domStrings.cell7).textContent = formatNumber(c7);
+    document.querySelector(domStrings.cell8).textContent = formatNumber(c8);
+    document.querySelector(domStrings.cell9).textContent = formatNumber(c9);
 
     document.querySelector(domStrings.cell10).textContent = formatNumber(company.calcCell10());
     document.querySelector(domStrings.cell20).textContent = formatNumber(company.calcCell20());
@@ -210,6 +223,26 @@ updateValuation = function() {
     document.querySelector(domStrings.cell70).textContent = formatNumber(company.calcCell70());
     document.querySelector(domStrings.cell80).textContent = formatNumber(company.calcCell80());
     document.querySelector(domStrings.cell90).textContent = formatNumber(company.calcCell90());
+
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9'],
+            datasets: [{
+                label: 'Valuation dynamics',
+                backgroundColor: '#87BCFD',
+                borderColor: '#87BCFD',
+                data: [c1, c2, c3, c4, c5, c6, c7, c8, c9]
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
 
 }
 

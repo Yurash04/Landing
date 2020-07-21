@@ -18,9 +18,10 @@
 
     <body>
         <header id="js--header">
-            <nav>
+            <nav class="js--upper-nav">
                 <div class="row">
                     <a href="#js--header"><img class="logo" src="Resources/f84f82c4-16cb-4c82-ac48-bdba3725c76a_200x200.png"></a>
+                    <a href="#js--header"><img class="logo-sticky" src="Resources/f84f82c4-16cb-4c82-ac48-bdba3725c76a_200x200.png"></a>
                     <ul class="main-nav js--main-nav">
                         <li><a href="#js--section-bother">Why care</a></li>
                         <li><a href="#js--section-works">Hot it works</a></li>
@@ -47,7 +48,7 @@
 
 
 
-        <section class="section-why-bother" id="js--section-bother">
+        <section class="section-why-bother" id="js--section-bother" >
             <h2>You've got the point, who needs it?</h2>
             <p>At the time, when P/E ratio of over 100 does not scare anyone because the expected revenue growth rates seem to double every other year one needs a solid and grounded foundation when it comes to investing. Investors no longer deem it unprudent to see Nasdaq exceeding before-pandemic highs. That is when value investing comes in handy in order to check in with real cashflows and interest rates.</p>
             <img src="Resources/nasdaq.png" class="nasdaq" alt="nasdaq-graph">
@@ -70,7 +71,7 @@
                      </ul>
             </div>
             <h3>Disclaimer</h3>
-            <p>income-based approach should be used as an component of complete business valuation process due to the fact that company's value cannot be fully described by means of only one instrument.</p>
+            <p>Income-based approach should be used as an component of complete business valuation process due to the fact that company's value cannot be fully described by means of only one instrument.</p>
 
         </section>
 
@@ -239,6 +240,11 @@
 
         </section>
 
+        <section class="section-graphs">
+            <h2>Data visualization</h2>
+            <canvas id="myChart" width="600" height="300"></canvas>
+        </section>
+
         <footer class="footer">
             <div class="row">
                     <ul class="footer-nav">
@@ -253,6 +259,7 @@
             </div
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
