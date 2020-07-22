@@ -31,14 +31,14 @@
 
     p {
         width: 80%;
-        margin-top: 20px;
     }
 
     .row { width: 100%; }
 
     .tough-row { width: 90%; }
 
-    .nasdaq { max-width: 60%;
+    .nasdaq { 
+        max-width: 90%;
         padding: 5px;
         height: 300px;
         margin-top: 30px; 
@@ -111,17 +111,16 @@
 
     h3 { 
         font-size: 150%;
-        margin-bottom: 5px;
-        margin-top: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     p {
         width: 80%;
-        margin-top: 15px;
     }
 
     .nasdaq { 
-        max-width: 60%;
+        max-width: 90%;
         padding: 5px;
         height: 300px;
         margin-top: 15px; 
@@ -164,7 +163,10 @@
         padding: 8px;
     }
     
-    #myChart { margin-top: 50px; }
+    #myChart { 
+        margin-top: 50px;
+        height: 700;
+    }
 
 }
 
@@ -278,30 +280,31 @@
     h3 {
         font-size: 120%;
         font-weight: 200;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     p {
-        line-height: 20px;
+        line-height: 25px;
         width: 90%;
     }
 
     .nasdaq { 
-        max-width: 80%;
+
+        width: 80%;
         padding: 5px;
         height: auto;
-        margin-top: 35px; 
+        margin-top: 15px; 
     }
 
     .section-works p {
-        line-height: 22px ;
+        line-height: 18px ;
     }
 
     .dcf-pros li {
-        width: 70%;
+        width: 80%;
         font-size: 90%;
-        line-height: 20px;
-        margin-top: 10px;
+        line-height: 18px;
+        margin-top: 5px;
     }
 
     .col:first-child { margin-left: 1.6%; }
@@ -311,7 +314,7 @@
     .data-form {
         margin: 0 auto;
         padding: 5px;
-        width: 70%;
+        width: 80%;
         margin-bottom: 5px;
         font-size: 87%;
     }
@@ -341,6 +344,11 @@
 
     }
 
+    #myChart { 
+        margin-top: 50px;
+        height: 700px;
+    }
+
     footer {
         padding: 20px;
         width: 100%;
@@ -348,11 +356,14 @@
     
     .footer-nav li { 
         margin-right: 10px;
+        font-size: 90%;
     }
 
     .footer p {
         margin-top: 20px;
         width: 100%;
+        font-size: 90%:
+
     }
 
 }
@@ -368,7 +379,7 @@
     .col { width: 100%; }
 
     p {
-        line-height: 20px;
+        line-height: 18px;
     }
 
 }
