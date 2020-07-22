@@ -163,9 +163,11 @@
         padding: 8px;
     }
     
-    #myChart { 
-        margin-top: 50px;
-        height: 700;
+    .chart-container {
+        position: relative;
+        margin: auto 20px;
+        height: 500px;
+        width: 80vw;
     }
 
 }
@@ -247,7 +249,7 @@
     h1 {
         height: auto;
         width: 100%;
-        font-size: 120%;
+        font-size: 115%;
         font-weight: 400;
     }
 
@@ -283,10 +285,13 @@
         margin-top: 10px;
     }
 
+
     p {
         line-height: 25px;
         width: 90%;
     }
+
+    .section-why-bother p { line-height: 28px; }
 
     .nasdaq { 
 
@@ -355,9 +360,9 @@
     }
 
     .chart-container {
-        position: relative;
-        height: 60vh;
-        width: 80vw;
+        position: relative;  
+        height: 800;
+        width: auto;
     }
 
     footer {
@@ -367,13 +372,13 @@
     
     .footer-nav li { 
         margin-right: 10px;
-        font-size: 90%;
+        font-size: 80%;
     }
 
     .footer p {
         margin-top: 20px;
         width: 100%;
-        font-size: 90%;
+        font-size: 80%;
 
     }
 
