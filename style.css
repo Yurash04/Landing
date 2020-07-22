@@ -143,9 +143,10 @@ header {
 
 .mobile-nav-icon {
     float: right;
-    margin-top: 42px;
+    margin-top: 55px;
     cursor: pointer;
     display: none;
+    margin-right: 3%;
 }
 
 .mobile-nav-icon {
@@ -183,7 +184,7 @@ h1 {
 .buttons {
     text-align: center;
     margin-bottom: 20px;
-    margin-left: 48px;
+
     /*border: 1px solid #555;*/
 }
 
@@ -211,12 +212,13 @@ h1 {
 .btn-full:visited {
     background-color: #4833EB;
     color: #fff;
+    margin-left: 50px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
     color: #4833EB;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .btn:hover,

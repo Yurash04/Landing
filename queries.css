@@ -176,7 +176,7 @@
     body { font-size: 16px;}
     section { padding: 20px 0; }
 
-    .row { padding: 0 4%; }
+    .row { padding: 0 2%; }
     .col { width: 100%; }
 
     .title-box { width: 100%; }
@@ -242,7 +242,6 @@
         margin-bottom: 5px;
     }
 
-
     h1 {
         height: auto;
         width: 100%;
@@ -255,6 +254,17 @@
         margin-top: 20px;
     }
 
+    .btn-full:link,
+    .btn-full:visited {
+        margin-right: 20px;
+    }
+
+    .btn-ghost:link,
+    .btn-ghost:visited {
+        margin-left: 0px;
+    }
+
+
     .box span {
         width: 15px;
         height: 15px;
@@ -262,11 +272,18 @@
 
     h2 {
         margin-top: 30px;
+        font-size: 120%;
+    }
+
+    h3 {
+        font-size: 120%;
+        font-weight: 200;
+        margin-top: 20px;
     }
 
     p {
-        line-height: 30px;p {
-        width: 100%;
+        line-height: 20px;
+        width: 90%;
     }
 
     .nasdaq { 
@@ -283,7 +300,8 @@
     .dcf-pros li {
         width: 70%;
         font-size: 90%;
-        line-height: 22px;
+        line-height: 20px;
+        margin-top: 10px;
     }
 
     .col:first-child { margin-left: 1.6%; }
