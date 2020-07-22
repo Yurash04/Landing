@@ -57,6 +57,8 @@ header {
     
 }
 
+.tough-header { width: 90%; }
+
 .main-nav {
     float: right;
     list-style: none;
