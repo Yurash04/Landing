@@ -212,13 +212,11 @@ h1 {
 .btn-full:visited {
     background-color: #4833EB;
     color: #fff;
-    margin-left: 50px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
     color: #4833EB;
-    margin-left: 50px;
 }
 
 .btn:hover,

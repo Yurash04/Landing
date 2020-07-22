@@ -344,9 +344,19 @@
 
     }
 
+    .company-table {
+        margin: 10px auto;
+        width: 90%;
+        font-size: 80%;
+    }
+
     #myChart { 
         margin-top: 50px;
-        height: 700px;
+    }
+
+    .chart-container {
+        height: 60vh;
+        width: 80vw;
     }
 
     footer {
