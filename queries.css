@@ -258,7 +258,7 @@
 
     .btn-full:link,
     .btn-full:visited {
-        margin-right: 20px;
+        margin-right: 0px;
     }
 
     .btn-ghost:link,
@@ -290,10 +290,10 @@
 
     .nasdaq { 
 
-        width: 80%;
+        width: 90%;
         padding: 5px;
         height: auto;
-        margin-top: 15px; 
+        margin-top: 25px; 
     }
 
     .section-works p {
@@ -373,13 +373,13 @@
 /* =====================================================*/
 @media only screen and (max-width: 480px) {
 
-    section { padding: 50px 0; }
+    section { padding: 20px 0; }
 
     .row { padding: 0 2%; }
     .col { width: 100%; }
 
     p {
-        line-height: 18px;
+        line-height: 20px;
     }
 
 }
